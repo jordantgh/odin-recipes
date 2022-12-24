@@ -8,10 +8,20 @@ h1 {
 }
 
 li {
-    background-color: rgb(215, 186, 243);
+    background-color: rgb(229, 211, 247);
     list-style-type: none;
-    padding: 20px;
+    padding: 10px;
     font-size: 24px;
     font-weight: 800;
-    text-align: center;
+    text-align: left;
+    margin-top: 10px;
+}
+
+.method > li {
+    background-color: rgb(167, 253, 249);
+    list-style-type: decimal;
+}
+
+ol > ul > li {
+    background-color: honeydew;
 }

@@ -1,5 +1,6 @@
 * {
     font-family: Arial, Helvetica, sans-serif;
+    margin: 0;
 }
 
 h1 {
@@ -11,14 +12,16 @@ h1 {
     text-align: center;
 }
 
-img {
-    display: block;
-    margin-left: auto;
-    margin-right: auto;
-    background-color: #333;
-    padding: 10px;
-    border-radius: 6px;
-    width: clamp(10px, 95%, 650px)
+.topbar {
+    background-color: rgb(71, 71, 71);
+    overflow: hidden;
+    position: fixed;
+    top: 0;
+    width: 100%;
+}
+
+.topbar a {
+    color: #ffffff;
 }
 
 h2 {
@@ -36,6 +39,16 @@ h2 {
     margin-right: auto;
     display: block;
     width: clamp(10px, 95%, 650px);
+}
+
+img {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    background-color: #333;
+    padding: 10px;
+    border-radius: 6px;
+    width: clamp(10px, 95%, 650px)
 }
 
 p, ul, ol {

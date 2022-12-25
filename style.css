@@ -1,3 +1,7 @@
+* {
+    font-family: Arial, Helvetica, sans-serif;
+}
+
 h1 {
     background: #f31111;
     color: #ffffff;
@@ -7,21 +11,57 @@ h1 {
     text-align: center;
 }
 
-li {
-    background-color: rgb(229, 211, 247);
-    list-style-type: none;
+img {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    background-color: #333;
     padding: 10px;
-    font-size: 24px;
-    font-weight: 800;
+    border-radius: 6px;
+    width: clamp(10px, 95%, 650px)
+}
+
+h2 {
+    text-align: center;
+    text-transform: uppercase;
+    font-size: clamp(1rem, 4vw, 2rem);
+    margin-top: 20px;
+    margin-bottom: 20px;
+    background-color: #333;
+    color: #fafafa;
+    padding: 10px;
+    border-radius: 6px; /*Rounded corners*/
+    max-width: 80ch;
+    margin-left: auto;
+    margin-right: auto;
+    display: block;
+    width: clamp(10px, 95%, 650px);
+}
+
+p, ul, ol {
+    width: clamp(10px, 80%, 600px);
+    margin: auto;
+    list-style-type: circle;
+    font-size: clamp(0.6rem, 4vw, 1.5rem);
+    font-weight: 500;
+    padding: 10px;
     text-align: left;
     margin-top: 10px;
 }
 
-.method > li {
-    background-color: rgb(167, 253, 249);
-    list-style-type: decimal;
+.ingredients {
+    font-weight: 600;
 }
 
-ol > ul > li {
-    background-color: honeydew;
+.method {
+    font-weight: 400;
+    list-style-type: decimal;
+    margin-top: 10px;
+    margin-bottom: 0px;
+}
+
+ol > ul {
+    margin-top: -10px;
+    width: 90%;
+    font-size: clamp(0.4rem, 3.5vw, 1.2rem);
 }
